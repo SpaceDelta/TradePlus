@@ -7,14 +7,14 @@ import org.bukkit.metadata.MetadataValue;
 
 public class PlayerUtil {
 
-  public static boolean isVanished(Player player) {
-    if (Bukkit.getPluginManager().isPluginEnabled("Essentials")) {
-      if (EssentialsHook.isVanished(player)) return true;
-    }
+    public static boolean isVanished(Player player) {
+        if (Bukkit.getPluginManager().isPluginEnabled("Essentials")) {
+            if (EssentialsHook.isVanished(player)) return true;
+        }
 
-    for (MetadataValue meta : player.getMetadata("vanished")) {
-      if (meta.asBoolean()) return true;
+        for (MetadataValue meta : player.getMetadata("vanished")) {
+            if (meta.asBoolean()) return true;
+        }
+        return false;
     }
-    return false;
-  }
 }

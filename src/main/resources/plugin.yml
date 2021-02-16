@@ -4,6 +4,7 @@ author: Trophonix
 main: com.trophonix.tradeplus.TradePlus
 softdepend: [Vault,EnjinMinecraftPlugin,GriefPrevention,PlayerPoints,TokenManager,TokenEnchant,WorldGuard,VotingPlugin]
 api-version: "1.13"
+
 commands:
   trade:
     description: Trade command
